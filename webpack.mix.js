@@ -14,3 +14,7 @@ const mix = require('laravel-mix');
 mix.ts('resources/js/index.tsx', 'public/js/app.js')
     .extract()
     .sourceMaps();
+
+if (mix.inProduction()) {
+    mix.version();
+}
