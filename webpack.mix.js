@@ -18,3 +18,5 @@ mix.ts('resources/js/index.tsx', 'public/js/app.js')
 if (mix.inProduction()) {
     mix.version();
 }
+
+mix.browserSync('localhost:8000');
