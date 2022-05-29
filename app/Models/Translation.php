@@ -10,6 +10,16 @@ class Translation extends Model
 {
     use HasFactory;
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+    protected $fillable = [
+        'en',
+        'ru',
+    ];
+
     public function dictionary(): BelongsTo
     {
         return $this->belongsTo(Dictionary::class);
