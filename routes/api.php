@@ -20,4 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('dictionary', DictionaryController::class)
-    ->only('store');
+    ->only(['index', 'store', 'show']);
