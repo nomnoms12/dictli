@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>{{ config('app.name') }}</title>
 </head>
 <body class="d-flex h-100 text-center bg-light">
 <noscript>You need to enable JavaScript to run this app.</noscript>
